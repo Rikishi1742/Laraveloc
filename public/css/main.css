@@ -1,0 +1,297 @@
+* {
+     font-family: Verdana, sans-serif;
+ }
+body, html {
+    margin: 0;
+}
+/*================================== Common Classes ============================*/
+.in-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+.disp-none {
+    display: none;
+}
+.disp-block {
+    display: block;
+}
+.disp-flex {
+    display: flex;
+}
+.disp-flex-column {
+    display: flex;
+    flex-direction: column;
+}
+.align-center {
+    align-items: center;
+}
+.justify-center {
+    justify-content: center;
+}
+.justify-align {
+    justify-content: space-around;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.mt-10 {
+    margin-top: 10px;
+}
+.mt-20 {
+    margin-top: 20px;
+}
+.w-1040 {
+    max-width: 1040px;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+
+/*================================== Common classes ============================*/
+button, input[type="submit"] {
+    color: black;
+    padding: 15px 32px;
+    font-size: 16px;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border: none;
+    font-weight: 700;
+}
+h1, h2, h3 {
+    text-align: center;
+}
+a {
+    text-decoration: none;
+}
+hr.global-hr {
+    height: 12px;
+    border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(0, 0, 0, 0.5);
+}
+
+/*================================== Layout-main ===============================*/
+header {
+    background-color: orange;
+    height: 100px;
+    width: 100%;
+    color: white;
+    font-weight: 700;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #000;
+}
+
+.header-content {
+    max-width: 1040px;
+    height: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+}
+.btn-login {
+    background-color: white;
+}
+.btn-login:hover {
+    background-color: #DB7093;
+    color: white;
+}
+.btn-register {
+    background-color: orange;
+    color: white;
+}
+.success-bids-amount {
+    transition-duration: 0.6s;
+    display: block;
+    font-size: 1.4rem;
+}
+.amount-update {
+    color: #4CAF50;
+    transform: scale(1.4);
+}
+
+/*================================== FORM ===============================*/
+.form {
+    max-width: 500px;
+    padding: 40px;
+    box-sizing: border-box;
+    border: 2px solid rgb(53, 100, 255);
+}
+.form-label {
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    color: black;
+    font-weight: 700;
+}
+.form-input {
+    font-size: 1.2rem;
+    padding: 5px 10px;
+    box-sizing: border-box;
+    width: 100%;
+    border: none;
+    border-bottom: 2px solid gray;
+    transition-duration: 0.4s;
+}
+.form-input:focus {
+    outline: none;
+    border-bottom-color: rgb(53, 100, 255);
+}
+.form-input-error {
+    border-bottom-color: #f44336;
+}
+input.form-submit {
+    background-color: white;
+    border: 2px solid #EE82EE;
+}
+input.form-submit:hover {
+    background-color: #DB7093;
+    color: white;
+}
+.privacy-agreement-text {
+    font-size: 0.9rem;
+}
+@keyframes scale {
+    0% {
+        transform: scaleX(0);
+        opacity: 0.0;
+    }
+    100% {
+        transform: scaleX(1);
+        opacity: 1.0;
+    }
+}
+.errors-block {
+    background-color: #f44336;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    animation: scale 0.3s;
+}
+.errors-validation-block {
+    transition: 1s;
+}
+
+/*================================== BIDS ===============================*/
+.bid-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.bid-panel-block {
+    border: 2px solid #4CAF50;
+    padding: 10px;
+    box-sizing: border-box;
+}
+@keyframes opacity {
+    0% {
+        opacity: 0.0;
+    }
+    100% {
+        opacity: 1.0;
+    }
+}
+.bid-item {
+    width: 400px;
+    margin: 10px;
+    animation: opacity 0.5s;
+}
+.bid-item-client {
+    border-bottom: 2px solid #4CAF50;
+}
+.bid-head {
+    width: 100%;
+    justify-content: flex-end;
+}
+.bid-item .bid-info {
+    padding: 10px;
+    box-sizing: border-box;
+}
+.bid-photo-block {
+    width: 400px;
+    height: 300px;
+    overflow: hidden;
+    
+}
+.bid-photo-block:hover > .bid-carousel {
+    margin-left: -400px;
+}
+.bid-carousel {
+    width: 400px;
+    height: 600px;
+    transition-duration: 1s;
+    display: flex;
+}
+.bid-photo {
+    width: 100%;
+    height: 50%;
+}
+.bid-item-client:hover {
+    background-color: rgba(53, 122, 255, 0.1);
+}
+.btn-delete {
+    background-color: rgba(244, 67, 54, 0.3);
+    color: white;
+    font-size: 1rem;
+}
+.btn-delete:hover {
+    background-color: rgb(244, 67, 54);
+}
+
+/*================================== CLIENT PANEL ===========================*/
+.client-filter-form {
+    max-width: 500px;
+    display: grid;
+    grid-template-columns: 1fr 200px;
+    grid-gap: 10px;
+}
+
+/*================================== ADMIN PANEL ===========================*/
+.admin-remove-category-form {
+    max-width: 450px;
+    display: grid;
+    grid-template-columns: 1fr 170px;
+}
+input.btn-delete-category {
+    display: block;
+    margin-left: 20px;
+    border: 2px solid #f44336;
+    background-color: white;
+}
+.btn-delete-category:hover {
+    background-color: #f44336;
+    color: white;
+}
+.bid-admin-list {
+    display: block;
+}
+.bid-admin-list > div {
+    margin-right: auto;
+    margin-left: auto;
+}
+.bid-admin-controls {
+    max-width: 700px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+}
+
+.tanya_button {
+    color: black;
+    padding: 15px 32px;
+    font-size: 16px;
+    border-radius: 4px;
+    transition-duration: 0.4s;
+    font-weight: 700;
+    border: 2px solid black;
+}
+
+.tanya_button:hover {
+    color: white;
+    background-color: #000;
+}
+
+
